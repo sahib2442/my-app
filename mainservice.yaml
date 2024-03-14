@@ -19,3 +19,8 @@ spec:
   selector:
     app: myapp
   type: NodePort
+  ports:
+  - name: httpd
+    port: 80
+    targetPort: 8080
+    protocol: TCP
